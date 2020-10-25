@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/uim-iso27001
+uim-iso27001.so
+uim-iso27001.dylib
+uim-iso27001.dll
+uim-iso27001.a
+uim-iso27001.lib
+uim-iso27001-test-*
+*.exe
+*.o
+*.obj
+*.lst
