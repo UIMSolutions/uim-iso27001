@@ -1,24 +1,22 @@
-module uim.iso27001.classes.groups.controls;
+/***********************************************************************************************
+*	Copyright: © 2017-2022, UI Manufaktur UG
+*	License: Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+*	Authors: UI Manufaktur Team
+************************************************************************************************/
+module uim.iso27001.classes.groups.control;
 
-import uim.grundschutz;
+import uim.iso27001;
 
-class ControlGroup {
-// class ControlGroup : Group<Control> : IISO27kGroup {
-    
-/* 	static final string TYPE_ID = "controlgroup"; //$NON-NLS-1$
-	static final string PROP_NAME = "controlgroup_name"; //$NON-NLS-1$
-	
-	static final string PROP_IS_CATALOG = "samt_topic_is_catalog";
-
-	static final string[] CHILD_TYPES = new string[] {Control.TYPE_ID,SamtTopic.TYPE_ID};
-	
-	ControlGroup() {
-		super();
+class DISOControlGroup : DISOGroup!DISOControl, IISOGroup {
+	this() {
+/* 		super();
 		setEntity(new Entity(TYPE_ID));
 		getEntity().initDefaultValues(getTypeFactory());
-	}
+ */	}
+
 	
-	ControlGroup(CnATreeElement parent) {
+
+/* 	ControlGroup(CnATreeElement parent) {
 		super(parent);
 		setEntity(new Entity(TYPE_ID));
 		getEntity().initDefaultValues(getTypeFactory());
@@ -29,28 +27,16 @@ class ControlGroup {
 	ControlGroup(CnATreeElement parent, string iconPath) {
         this(parent);
         this.setIconPath(iconPath);
-    }
+  }
+ */
 
-    /* (non-Javadoc)
-	 * @see snt.gs.ui.rcp.main.common.model.CnATreeElement#getTypeId()
-	 */
-
-
-
-	/* (non-Javadoc)
-	 * @see snt.gs.ui.rcp.main.common.model.CnATreeElement#getTitle()
-	 * /
-	override string getTitle() {
-		return getEntity().getSimpleValue(PROP_NAME);
-	}
+/* 	// static final string TYPE_ID = "controlgroup"; //$NON-NLS-1$
+	// static final string PROP_NAME = "controlgroup_name"; //$NON-NLS-1$
 	
-	/* (non-Javadoc)
-	 * @see snt.gs.ui.rcp.main.common.model.CnATreeElement#setTitel(java.lang.String)
-	 * /
-	override
-    void setTitel(string name) {
-		getEntity().setSimpleValue(getEntityType().getPropertyType(PROP_NAME), name);
-	}
+	// static final string PROP_IS_CATALOG = "samt_topic_is_catalog";
+
+	// static final string[] CHILD_TYPES = new string[] {Control.TYPE_ID,SamtTopic.TYPE_ID};
+	
 	
 	/* (non-Javadoc)
 	 * @see iso27k.model.Group#getChildTypes()

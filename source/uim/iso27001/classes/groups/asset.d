@@ -1,25 +1,23 @@
+/***********************************************************************************************
+*	Copyright: © 2017-2022, UI Manufaktur UG
+*	License: Subject to the terms of the MIT license, as written in the included LICENSE.txt file.
+*	Authors: UI Manufaktur Team
+************************************************************************************************/
+module uim.iso27001.classes.groups.asset;
 
-module uim.grundschutz.models.old.iso27k.groups.asset;
+import uim.iso27001;
 
-import uim.grundschutz;
+class DISOAssetGroup : DISOGroup!DISOAsset, IISOGroup {
 
-class I27AssetGroup : I27Group {
-// class AssetGroup : Group<Asset>, IISO27kGroup {
-
-/* 	static final string TYPE_ID = "assetgroup"; //$NON-NLS-1$
-	static final string PROP_NAME = "assetgroup_name"; //$NON-NLS-1$	
-    static final string REL_PERSON_ISO = "rel_assetgroup_person-iso"; //$NON-NLS-1$
-	
-	static final string[] CHILD_TYPES = new string[] {Asset.TYPE_ID};
-	
-	
-	AssetGroup() {
+	this() {
 		super();
-		setEntity(new Entity(TYPE_ID));
+/* 		setEntity(new Entity(TYPE_ID));
         getEntity().initDefaultValues(getTypeFactory());
-	}
+ */	}
+
 	
-	AssetGroup(CnATreeElement parent) {
+
+/* 	this(CnATreeElement parent) {
 		super(parent);
 		setEntity(new Entity(TYPE_ID));
 		getEntity().initDefaultValues(getTypeFactory());
@@ -27,28 +25,17 @@ class I27AssetGroup : I27Group {
         setTitel(getTypeFactory().getMessage(TYPE_ID));
     }
 	
-	AssetGroup(CnATreeElement parent, string iconPath) {
+	this(CnATreeElement parent, string iconPath) {
 	    this(parent);
 	    this.setIconPath(iconPath);
 	}
-
-	/* (non-Javadoc)
-	 * @see snt.gs.ui.rcp.main.common.model.CnATreeElement#getTypeId()
-	 * /
-
-
-	override string getTitle() {
-		return getEntity().getSimpleValue(PROP_NAME);
-	}
+ */
+/* 	// static final string TYPE_ID = "assetgroup"; //$NON-NLS-1$
+	// static final string PROP_NAME = "assetgroup_name"; //$NON-NLS-1$	
+    // static final string REL_PERSON_ISO = "rel_assetgroup_person-iso"; //$NON-NLS-1$
 	
-	override
-    void setTitel(string name) {
-		getEntity().setSimpleValue(getEntityType().getPropertyType(PROP_NAME), name);
-	}
+	// static final string[] CHILD_TYPES = new string[] {Asset.TYPE_ID};
 
-	/* (non-Javadoc)
-	 * @see iso27k.model.Group#getChildTypes()
-	 * /
 	override string[] getChildTypes() {
 		return CHILD_TYPES;
 	}

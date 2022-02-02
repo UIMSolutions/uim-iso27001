@@ -1,18 +1,9 @@
 module uim.iso27001.messages;
 
-import uim.grundschutz;
-
-
-// import org.eclipse.osgi.util.NLS;
-
-/**
- * @author koderman@snt.de
- * @version $Rev$ $LastChangedDate$ 
- * $LastChangedBy$
- *
- */
+import uim.iso27001;
+/* 
 final class Messages : NLS {
-    private static final string BUNDLE_NAME = "model.iso27k.messages"; //$NON-NLS-1$
+    private // static final string BUNDLE_NAME = "model.iso27k.messages"; //$NON-NLS-1$
     static string AssetValueAdapter_11;
     static string AssetValueAdapter_7;
     static string AssetValueAdapter_9;
@@ -25,3 +16,4 @@ final class Messages : NLS {
     private Messages() {
     }
 }
+ */
